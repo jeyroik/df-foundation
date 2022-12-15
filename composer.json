@@ -1,0 +1,22 @@
+{
+  "name": "jeyroik/df-foundation",
+  "description": "DF foundation package",
+  "require": {
+    "jeyroik/extas-foundation": "6.*",
+    "jeyroik/extas-id": "0.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9",
+    "vlucas/phpdotenv": "^5.5",
+    "phpstan/phpstan": "0.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "df\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit --testdox --coverage-clover=coverage.xml --whitelist=src tests",
+    "stan": "vendor/bin/phpstan analyse -l 5 src"
+  }
+}
