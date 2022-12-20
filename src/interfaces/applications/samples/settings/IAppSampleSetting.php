@@ -1,6 +1,7 @@
 <?php
-namespace df\interfaces\applications\samples;
+namespace df\interfaces\applications\samples\settings;
 
+use df\interfaces\applications\samples\IHaveAppSample;
 use df\interfaces\IHaveExample;
 use df\interfaces\values\IHaveValueGenerator;
 use df\interfaces\values\IHaveValueValidator;
@@ -11,7 +12,7 @@ use extas\interfaces\IHasValue;
 use extas\interfaces\IHaveUUID;
 use extas\interfaces\IItem;
 
-interface IApplSampleSetting extends 
+interface IAppSampleSetting extends 
     IItem, IHaveUUID, IHasName, IHasDescription, IHasType, IHasValue,
     IHaveAppSample, IHaveExample, IHaveValueValidator, IHaveValueGenerator
 {

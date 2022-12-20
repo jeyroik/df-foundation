@@ -7,7 +7,7 @@ use extas\interfaces\IHasValue;
 use extas\interfaces\IHaveUUID;
 use extas\interfaces\IItem;
 
-interface IStateCondition extends IItem, IHaveUUID, IHaveStateField, IHaveBPState, IHasValue
+interface IBPStateCondition extends IItem, IHaveUUID, IHaveStateField, IHaveBPState, IHasValue
 {
     public const SUBJECT = 'df.bp.state.condition';
 
