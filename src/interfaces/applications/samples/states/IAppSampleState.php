@@ -1,6 +1,7 @@
 <?php
 namespace df\interfaces\applications\samples\states;
 
+use df\interfaces\applications\samples\IHaveAppSample;
 use extas\interfaces\IHasDescription;
 use extas\interfaces\IHasName;
 use extas\interfaces\IHaveUUID;
