@@ -1,6 +1,7 @@
 <?php
 namespace df\components\applications\samples\states\fields;
 
+use df\components\applications\samples\states\THasAppSampleState;
 use df\components\THasExample;
 use df\components\values\THasValueValidator;
 use df\interfaces\applications\samples\states\fields\IStateField;
@@ -19,6 +20,7 @@ class StateField extends Item implements IStateField
     use THasExample;
     use THasType;
     use THasValueValidator;
+    use THasAppSampleState;
 
     protected function getSubjectForExtension(): string
     {
